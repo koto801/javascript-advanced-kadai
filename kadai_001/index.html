@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>タイピングゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">TYPING<span>GAME</span></h1>
+
+    <div id="start-screen" class="screen active">
+      <p class="lead">制限時間内にできるだけ多くタイプしよう！</p>
+      <button id="start-btn" class="btn">スタート</button>
+    </div>
+
+    <div id="game-screen" class="screen">
+      <div class="hud">
+        <div class="hud-item">
+          <span class="hud-label">タイム</span>
+          <span id="timer" class="hud-value">30</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">スコア</span>
+          <span id="score" class="hud-value">0</span>
+        </div>
+      </div>
+
+      <div class="word-box">
+        <p id="current-word" class="word"></p>
+        <!-- 課題追加要素: タイプ数カウント表示 -->
+        <p id="type-count" class="type-count">タイプ数: <span id="count-value">0</span></p>
+      </div>
+
+      <input id="type-input" class="type-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="ここに入力...">
+    </div>
+
+    <div id="result-screen" class="screen">
+      <h2 class="result-title">結果</h2>
+      <div class="result-box">
+        <div class="result-item">
+          <span class="result-label">スコア（正解ワード数）</span>
+          <span id="final-score" class="result-value">0</span>
+        </div>
+        <div class="result-item">
+          <span class="result-label">合計タイプ数</span>
+          <span id="final-count" class="result-value">0</span>
+        </div>
+      </div>
+      <button id="retry-btn" class="btn">もう一度</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
