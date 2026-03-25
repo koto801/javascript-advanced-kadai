@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+#timer-area {
+  font-size: 20px;
+  margin: 20px;
+  color: #555;
+}
+
+#timer {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* グレーの背景部分（タイプする文字が表示される部分） */
+#typing-area {
+  background-color: #ccc;
+  padding: 30px;
+  margin: 20px auto;
+  width: 400px;
+  border-radius: 8px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#word-display {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+#input-area {
+  margin: 20px;
+}
+
+#type-input {
+  font-size: 20px;
+  padding: 8px;
+  width: 300px;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+}
+
+#score-area {
+  font-size: 20px;
+  margin: 10px;
+  color: #555;
+}
+
+#score {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+#start-btn {
+  font-size: 18px;
+  padding: 10px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#start-btn:hover {
+  background-color: #2980b9;
+}
